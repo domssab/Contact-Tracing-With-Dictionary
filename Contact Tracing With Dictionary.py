@@ -18,18 +18,33 @@ while mainmenu in (0,1,2,3):
             age = int(input("Enter your age: "))
             contact_address = input("Enter your address: ")
             phone_number = input("Enter the phone number: ")
-            contact_info = full_name, age, contact_address, phone_number
+            contact_info = [full_name, age, contact_address, phone_number]
             print("Saved!")
             contact_list.append(contact_info)
       # Option 2
       if mainmenu == 2:
+            for_search = int(input("Which to search?"
+                                   "\n 1. Full name"
+                                   "\n 2. Address"
+                                   "\n 3. Phone Number"))
             search = []
-            for_search = -1
-            search_contact = str(input("Type full name to search: "))
-            for i in range(len(contact_list)):
-                  if search_contact == contact_list[i][0]:
-                        for_search = i
-                        search.append(contact_list[i])
+            to_search = -1
+            if for_search == 1:
+                  full_name_search = str(input("Type full name to search: "))
+                  for f in range(len(contact_list)):
+                        if full_name_search == contact_list[i][0]:
+                              to_search = f
+                              search.append(contact_list[i])
+
+            elif for_search == 2:
+                  address_search = str(input("Type full address to search: "))
+                  for a in range(len(contact_list)):
+                        if address_search == contact_list[i][1]:
+                              to_search = a
+                              search.append(contact_list[i])
+
+            elif for_search == 3:
+                  phone_number_search = str(input())
 
 
 
