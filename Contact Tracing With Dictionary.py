@@ -7,7 +7,7 @@ print("Contact Tracing"
 
 #Main menu options
 mainmenu = 0
-while mainmenu in (0,1,2,3)
+while mainmenu in (0,1,2,3):
       # Input for menu
       mainmenu = int(input("Choose what to do: "))
       if mainmenu == 1:
