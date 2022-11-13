@@ -1,10 +1,10 @@
 # Printing menu
-print("===== CONTACT TRACING ====="
-      "\n|          Menu           |"
-      "\n|   1 -> Add an item      |"
-      "\n|   2 -> Search           |"
-      "\n|   3 -> Exit             |"
-      "\n===========================")
+print(" ===== CONTACT TRACING ====="
+      "\n|          Menu             |"
+      "\n|   1 -> Add an item        |"
+      "\n|   2 -> Search             |"
+      "\n|   3 -> Exit               |"
+      "\n ===========================")
 
 contact_list = {}
 
