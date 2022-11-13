@@ -23,28 +23,39 @@ while mainmenu in (0,1,2,3):
             contact_list.append(contact_info)
       # Option 2
       if mainmenu == 2:
-            for_search = int(input("Which to search?"
-                                   "\n 1. Full name"
+            for_search = int(input("1. Full name"
                                    "\n 2. Address"
-                                   "\n 3. Phone Number"))
+                                   "\n 3. Phone Number"
+                                   "\n Which to search? "))
             search = []
             to_search = -1
             if for_search == 1:
                   full_name_search = str(input("Type full name to search: "))
                   for f in range(len(contact_list)):
-                        if full_name_search == contact_list[i][0]:
+                        if full_name_search == contact_list[f][0]:
                               to_search = f
-                              search.append(contact_list[i])
+                              search.append(contact_list[f])
 
             elif for_search == 2:
                   address_search = str(input("Type full address to search: "))
                   for a in range(len(contact_list)):
-                        if address_search == contact_list[i][1]:
+                        if address_search == contact_list[a][1]:
                               to_search = a
-                              search.append(contact_list[i])
+                              search.append(contact_list[a])
 
             elif for_search == 3:
-                  phone_number_search = str(input())
+                  phone_number_search = str(input("Type the phone number to search: "))
+                  for p in range(len(contact_list)):
+                        if phone_number_search == contact_list[p][2]:
+                              to_search = p
+                              search.append(contact_list[p])
+
+            else:
+                  print("Invalid, please try again.")
+
+      # Option 3
+      if mainmenu == 3:
+            break
 
 
 
